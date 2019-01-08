@@ -1,10 +1,10 @@
  <?php
  function pubMqtt($topic,$msg){
        $APPID= "SmartFarm4/"; //enter your appid
-       $KEY = "Vgp6xCOJF4A6Rdr"; //enter your key
-    $SECRET = "B7dexZu6RYoeek81hL90BoyhO"; //enter your secret
-    // $KEY = "BJIC5UMh44DRGEj"; //enter your key
-   // $SECRET = "kMnKbuaVNKDQK8NgciEql8IHo"; //enter your secret
+    //   $KEY = "Vgp6xCOJF4A6Rdr"; //enter your key
+  //  $SECRET = "B7dexZu6RYoeek81hL90BoyhO"; //enter your secret
+     $KEY = "BJIC5UMh44DRGEj"; //enter your key
+    $SECRET = "kMnKbuaVNKDQK8NgciEql8IHo"; //enter your secret
     $Topic = "$topic"; 
       put("https://api.netpie.io/microgear/".$APPID.$Topic."?retain&auth=".$KEY.":".$SECRET,$msg);
  
